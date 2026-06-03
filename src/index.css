@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: white;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  line-height: 1.4;
+}
+
+.hero p {
+  margin-top: 20px;
+  color: gray;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.highlight {
+  background: #cfe3d6;
+  padding: 5px 12px;
+  border-radius: 10px;
+}
+
+.highlight2 {
+  background: #ffd6d6;
+  padding: 5px 12px;
+  border-radius: 10px;
+}
+
+/* Avatar Images */
+.avatars {
+  margin-top: 30px;
+}
+
+.avatars img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.section {
+  display: flex;
+  padding: 60px 40px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  transition: 0.3s;
+}
+
+/* Hover animation (Step 6) */
+.section:hover {
+  transform: translateY(-5px);
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.section .text {
+  flex: 1;
+}
+
+.section .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* FIXED IMAGE SIZE */
+.section img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.offer {
+  padding: 60px 40px;
+}
+
+.offer h2 {
+  margin-bottom: 20px;
+}
+
+.offer-row {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.small {
+  font-size: 12px;
+  color: gray;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.testimonial-box {
+  background: #eaf2ec;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.newsletter {
+  background: #cfe3d6;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.newsletter button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background: #cfe3d6;
+  padding: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.footer p {
+  margin-top: 5px;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
